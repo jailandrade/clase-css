@@ -1,49 +1,44 @@
-Css*{
+/*recuerden que primero es recomendable por convención iniciar todos los elementos con un padding de 0 y un margin en 0
+eso es lo que nos dice el asterisco, es decir que todos los elementos van a tener esas propiedades.*/
+*{
   padding: 0;
   margin: 0;
+  font-family: helvetica; /* nos sirve para definir la fuente que tendra nuestro sitio, es recomandable usar como maximo 2 tipos de fuentes. Puedes googlear en google fonts para experimentar*/
 }
+
+/* Todos los elementos div son por default display block, es decir, son elementos de bloque, entonces se puede definir
+un tamaño(width) y/o altura (height)*/
+
+/*Los elementos que son de tipo texto NO se les puede dar propiedades como width y hegiht*/
+
+/*Los modelos de layout son inline, inline-block, block, entre otros que veremos mas adelante.
+
+inline : propiedad del elemento que va a ser de tipo texto es decir los elemenos se alinean pero no tiene width ni height.
+
+block: es la propiedad que tiene por default un elemento o etiqueta div, este nos dice que el elemento va hacer de tipo bloque, se puede definir un width y height en pixeles, o porcentajes.
+
+inline-block: Es una conbinanción de ambas propiedades, es decir, tiene atributos de tipo bloque, pero tambien de tipo texto.
+
+*/
 
 .box{
-  background: yellow;  
+  background: lightblue;
+  width: 100%;
+  padding: 20px;
 }
+
+/* se pueden anidar clases dentro de clases para dar estilos a hijos o elementos especificos que pertenescan a un determinado padre.*/
 
 .box .item{
-  background: red;
-  color: white;
-  width: 12.8%;
+  background: tomato;
+  color:white;
+  width: 125px;
+  padding: 20px 0px;
+  text-align: center;
   display: inline-block;
-  margin:10px;
-  padding:40px;
-  text-align:center;
 }
 
-
-/* .box2{ */
-/*   display: table; */
-/*   width:100%; */
-/*   margin-top: 20px; */
-/* } */
-
-/* .box2 .item{ */
-/*   background: gray; */
-/*   display: table-cell; */
-/*   text-align:center; */
-/*   padding: 40px 0px; */
-/*   border:10px solid yellow; */
-/* } */
-
-/* .box3{ */
-/*   background: yellow; */
-/*   margin-top: 20px; */
-/*   display:flex; */
-/*   justify-content: space-around; */
-/* } */
-
-/* .box3 .item{ */
-/*   background: blue; */
-/*   color: white; */
-/*   text-align:center; */
-/*   /1* width: 100%; *1/ */
-/*   margin: 10px; */
-/*   padding: 40px; */
-/* } */
+.image{
+  margin-top: 50px;
+  text-align: center;
+}
